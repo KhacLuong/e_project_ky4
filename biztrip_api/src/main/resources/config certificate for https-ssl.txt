@@ -1,0 +1,10 @@
+Windows
+Run Microsoft Management Console (Windows + R -> mmc)
+File -> Add or Remove Snap-ins -> Certificate -> Add -> Computer Account -> Next -> Local Computer -> Finish -> OK
+Open Trusted Root Certification Authorities -> Certificates -> Right Click -> All Task -> Import
+Next -> change exension to pfx, p12 -> choose file .pfx inside src/main/resources -> Next -> use the password below
+-> Next -> Next -> Finish
+Close -> Save console settings
+
+keystore password 3E>}t3A@y&kN6wnU
+New port: 8443

@@ -1,0 +1,51 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: 'jdbc:mysql://localhost:3306/biztrip_database'
+    username: root
+    password: '123456'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    #        dialect: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 6MB
+      max-request-size: 6MB
+  mail:
+    host: sandbox.smtp.mailtrap.io
+    port: 2525
+    username: fe1f5b1b49d1ea
+    password: 267a67eb534177
+    properties:
+      mail:
+        smtp:
+          auth: no
+server:
+  port: 9090
+#  port: 8443
+#  ssl:
+#    key-store: "classpath:keystore.pfx"
+#    key-store-password: "3E>}t3A@y&kN6wnU"
+#    key-password: "3E>}t3A@y&kN6wnU"
+azure:
+  storage:
+    account-name: 'eprojectsem4'
+    account-key: 'm4O5/mKw5NcYWd0AeiG8WrBovqHBbJE6/tAd0ddLts9urO2EwiPGu9RxSheY0wTOhcmB2aoNPRF3+AStVb5dfQ=='
+    blob-endpoint: 'https://eprojectsem4.blob.core.windows.net'
+application:
+  security:
+    jwt:
+      secret-key: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+      expiration: 1800000 # 30 mins (86400000 = one day)
+      refresh-token:
+        expiration: 604800000 # 7 days
+stripe:
+  api:
+    key: sk_test_51KVA34Gg5RCCjfPzWgOWJzZYQf1HDxovLBALZfocepCIa7cTruwr0BJXdXS4Lg97KXvGAoIxmG0Rim8NZvSB26qY00ThLubgqk
+  webhook:
+    secret: whsec_816398304cc602180fbd2102906572d4b17ed27658d7dcd67eff8a16454269a8

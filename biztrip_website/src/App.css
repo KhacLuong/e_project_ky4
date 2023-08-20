@@ -1,0 +1,231 @@
+@layer basse {
+    body {
+        @apply font-sans;
+    }
+}
+
+.pageClassName, .breakClassName {
+    @apply inline-block rounded-md text-darkColor
+}
+.pageLinkClassName {
+    @apply mx-[4px] w-[30px] h-[30px] text-sm font-normal leading-8 uppercase inline-block text-center hover:bg-primaryColor hover:text-white rounded-md transition duration-300
+}
+.previousClassName, .nextClassName {
+    @apply flex justify-center flex-wrap list-none
+}
+.previousLinkClassName, .nextLinkClassName {
+    @apply mx-[4px] flex items-center text-center text-sm font-normal uppercase text-darkColor leading-8 px-[15px] bg-[#f0f0f0] hover:bg-primaryColor hover:text-white rounded-md transition duration-300
+}
+.breakLinkClassName {
+    @apply mx-[4px] w-[30px] h-[30px] text-sm font-normal leading-8 text-darkColor uppercase inline-block text-center hover:bg-primaryColor hover:text-white rounded-md transition duration-300
+}
+.footerTextHover {
+    @apply text-sm font-medium hover:text-primaryColor_hover cursor-pointer duration-300
+}
+.react-select-custom > div {
+    @apply bg-gray-50 border-[1px] border-gray-300 rounded-lg
+}
+.react-select-custom #react-select-2-placeholder {
+    @apply text-black py-2
+}
+.react-select-custom #react-select-2-listbox {
+    @apply mt-1
+}
+input[type='text']:focus {
+    @apply appearance-none outline-none shadow-none ring-offset-transparent ring-0 ring-offset-0 ring-transparent;
+}
+.text-editor {
+
+}
+.ProseMirror {
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    background: transparent;
+    border-radius: 0 0 5px 5px;
+    min-height: 100px;
+    overflow-y: scroll;
+    height: 200px;
+    outline: none;
+}
+    /* Basic editor styles */
+.ProseMirror > * + * {
+    margin-top: 0.75em;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+    padding: 0 1rem;
+    list-style: revert;
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4,
+.ProseMirror h5,
+.ProseMirror h6 {
+    line-height: 1.1;
+    display: block;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-weight: bold;
+}
+.ProseMirror h1 {
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+
+}
+.ProseMirror h2 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+}
+.ProseMirror h3 {
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+.ProseMirror h4 {
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+}
+.ProseMirror h5 {
+    font-size: 0.83em;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+}
+.ProseMirror h6 {
+    font-size: 0.67em;
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+}
+.ProseMirror code {
+    background-color: rgba(97, 97, 97, 0.1);
+    color: #616161;
+}
+
+.ProseMirror pre {
+    background: #0D0D0D;
+    color: #FFF;
+    font-family: 'JetBrainsMono', monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+}
+.ProseMirror code {
+    color: inherit;
+    padding: 0;
+    background: none;
+    font-size: 0.8rem;
+}
+
+.ProseMirror img {
+    max-width: 100%;
+    height: auto;
+}
+
+.ProseMirror blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid rgba(13, 13, 13, 0.1);
+}
+
+.ProseMirror hr {
+    border: none;
+    border-top: 2px solid rgba(13, 13, 13, 0.1);
+    margin: 2rem 0;
+}
+.ProseMirror u {
+    text-decoration: underline !important;
+}
+.ProseMirror s {
+    text-decoration: line-through !important;
+}
+.menu-bar {
+    align-items: center;
+    background: #374151;
+    border-bottom: 3px solid #374151;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    padding: 0.25rem;
+}
+.menu-bar button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    cursor: pointer;
+    height: 1.75rem;
+    margin-right: 0.25rem;
+    padding: 0.25rem;
+    width: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-bar button.is-active {
+    background-color: #d1d5db;
+    color: #0D0D0D;
+}
+.menu-bar .divider {
+    background-color: #ffffff40;
+    height: 1.25rem;
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
+    width: 1px;
+}
+.react-datepicker-popper {
+    top:  4.4rem !important;
+    padding-top: 0 !important;
+    transform: unset !important;
+}
+.react-datepicker-popper .react-datepicker__triangle {
+    display: none;
+}
+.splide__pagination {
+    bottom: -30px !important;
+}
+.splide__pagination .splide__pagination__page {
+    width: 9px;
+    height: 9px;
+    background-color: #c8c8d6;
+    opacity: 1;
+    transition: ease 500ms;
+    margin: 4px;
+}
+.splide__pagination .splide__pagination__page.is-active{
+    background: #1861c5;
+    width: 24px;
+    height: 9px;
+    transform: unset;
+    border-radius: 20px;
+}
+
+.splide__slide.coach_splide.is-active {
+    border: 3px solid #2274f5 !important;
+    transition: ease 350ms;
+}
+.splide__slide.coach_splide:not(.is-active) {
+    filter: blur(1px);
+    opacity: 0.6;
+}
+.fc-day-today {
+    background-color: #3b82f6 !important;
+}
+.fc-day-past {
+    background-color: #E6E6E6 !important;
+}
+.fc-day-past .fc-daygrid-day-top .fc-daygrid-day-number {
+    color: #223143;
+}
+.fc-daygrid-day-number {
+    font-weight: 600;
+    font-size: 16px;
+}
+.fc-day-today .fc-daygrid-day-top .fc-daygrid-day-number {
+    color: white;
+
+}
